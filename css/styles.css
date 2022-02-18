@@ -1,0 +1,478 @@
+
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.fade-in-element {
+  animation: fade-in 1.4s;
+}
+
+.hidden {
+    opacity: 0;
+  }
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateY(-8%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes clientSlide {
+    0% {
+        transform: translateX(-163vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+::selection {
+    background: #0085cb; /* WebKit/Blink Browsers */
+    color: white;
+  }
+  ::-moz-selection {
+    background: #0085cb; /* Gecko Browsers */
+    color: white;
+  }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0085cb;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #006da8;
+  }
+
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    padding: 15px;
+    background-color: rgb(0, 0, 0, 0);
+    z-index: 10;
+    width: 100%;
+}
+
+.header {
+    transition-duration: 1s;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+header nav {
+    animation: 2s slideRight;
+}
+
+.extrabutton {
+    background-color: #0085cb;
+    color: white !important;
+    padding: 10px;
+}
+
+.extrabutton:hover {
+    background-color: #006da8;
+    transition-duration: 0.3s;
+}
+
+header #right a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+header #right a:hover {
+    color: #0085cb
+}
+
+nav {
+    margin-left: -1.5vw;
+}
+
+.social {
+    color: white;
+    padding-right: 5px;
+}
+
+p {
+    font-size: 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 15px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+a:hover {
+    color: #0085cb;
+    transition-duration: 0.3s;
+}
+
+button, input, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#navflex {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+header #right {
+    text-align: right;
+    animation: 2s slideLeft;
+}
+
+#herologo {
+    margin-left: -2vw;
+}
+
+#hero {
+    background-image: url("../images/hero-min.jpg");
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 25vh;
+    padding-left: 10vw;
+    color: white;
+    background-position: right;
+}
+
+#hero p {
+    padding-bottom: 25vh;
+}
+
+.arrowdiv {
+    text-align: center;
+}
+
+#arrow {
+    animation: 1s ease-in-out 0s 1 slideInFromLeft;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    padding-bottom: 3vh;
+    color: white;
+}
+
+#arrow:hover {
+    color: #0085cb;
+    transition: 0.3s;
+}
+
+#omoss {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#omossbild {
+    background-color: gray;
+    padding: 15px;
+}
+
+#omosstext {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 100%;
+    margin-left: -10%;
+    margin-top: 5%;
+    padding:10px;
+}
+
+#services {
+    height: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.flex {
+    flex: 1;
+}
+
+.half {
+    width: 50%;
+    margin: 15px;
+    
+}
+
+.third {
+    width: 33%;
+    padding: 15px;
+    margin: 15px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}
+
+.third:hover {
+    transition-duration: 0.5s;
+    margin-top: -5px;
+    background-color: gray;
+}
+
+#clients {
+    background-color: rgb(0, 0, 0);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+#clientstext {
+    color: white;
+    text-align: center;
+    margin-bottom: -5vh;
+}
+
+#scroller {
+    width: 400vw;
+    animation: 30s clientSlide;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    overflow: hidden;
+}
+
+.clientlogo {
+    display: inline-block;
+    width: 20vw;
+}
+
+.clientlogoreal {
+    width:150px;
+}
+
+#contact {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left:50px;
+    padding-right: 50px;
+}
+
+.input {
+    height: 30px;
+    margin-bottom: 20px;
+}  
+
+#message {
+    height: 150px;
+    resize: none;
+}
+
+.button {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    width: 100%;
+    height: 65px;
+    background-color: #0085cb;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button:hover {
+    transition: 0.3s;
+    background-color: #006da8;
+
+}
+
+#contacttext {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    padding-right: 10%;
+    text-align: right;
+}
+
+#contactbild {
+    background-color: rgb(0, 0, 0);
+    height: 50%;
+    margin-left: -10%;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+input {
+    font-family: 'Outfit', sans-serif;
+    vertical-align: top;
+    width: 95%;;
+    padding: 2.5%;
+    transition: 0.3s;
+    background-color: white ;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input:focus {
+    background-color: rgb(192, 192, 192);
+}
+
+#annat {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#annatbild {
+    background-color: rgb(0, 0, 0);
+    padding: 15px;
+}
+
+#annattext {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 100%;
+    margin-right: -10%;
+    margin-top: 5%;
+    padding:10px;
+    z-index: 9;
+}
+
+footer {
+    background-color: black;
+    padding: 50px;
+    color: white;
+}
+
+#footertext {
+    text-align: center;
+    color: white;
+}
+
+footer #middlefooter a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+footer #middlefooter a:hover {
+    color: #0085cb;
+    transition: 0.3s;
+}
+
+#center {
+    text-align: center;
+}
+
+#uparrow {
+    transition-duration: 1s;
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    opacity: 0; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+}
+
+#uparrow:hover {
+    background-color: gray;
+    transition-duration: 0.3s;
+}
+
+#footerlogo {
+    padding-top: 25px;
+    margin-bottom: -25px;
+}
+
+#middlefooter {
+    flex: 2;
+    text-align: center;
+}
+
+#copyright p {
+    text-align: right;
+    
+}
+
+.inline {
+    display: inline;
+    padding-right: 4px;
+}
