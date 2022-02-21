@@ -197,7 +197,7 @@ header #right {
 }
 
 #myVideo {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -205,7 +205,7 @@ header #right {
   }
 
   .content {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     padding: 20px;
