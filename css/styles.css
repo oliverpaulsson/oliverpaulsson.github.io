@@ -196,25 +196,19 @@ header #right {
     margin-left: -2vw;
 }
 
-#myVideo {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-  }
-
-  .content {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 20px;
+#hero {
+    background-image: url("../images/hero-min.jpg");
+    background-size: cover;
+    overflow: hidden;
     padding-top: 25vh;
     padding-left: 10vw;
-    overflow: hidden;
     color: white;
-  }
+    background-position: right;
+}
 
+#hero p {
+    padding-bottom: 25vh;
+}
 
 #hero p {
     padding-bottom: 25vh;
