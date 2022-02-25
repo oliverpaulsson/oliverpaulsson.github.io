@@ -1,6 +1,4 @@
-
-  
-@keyframes fadeInAnimation {
+ @keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
@@ -74,9 +72,9 @@
     color: white;
   }
 
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
   }
   
   /* Track */
@@ -134,14 +132,14 @@ header nav {
     transition-duration: 0.3s;
 }
 
-header #right a {
+header #sixty a {
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
     margin-left: 25px;
 }
 
-header #right a:hover {
+header #sixty a:hover {
     color: #0085cb
 }
 
@@ -149,9 +147,17 @@ nav {
     margin-left: -1.5vw;
 }
 
+#forty {
+    flex: 4;
+}
+
+#sixty {
+    flex: 6;
+}
+
 .social {
     color: white;
-    padding-right: 5px;
+    padding-right: 15px;
 }
 
 p {
@@ -187,9 +193,17 @@ button, input, input[type="submit"], input[type="reset"] {
     padding-right: 10vw;
 }
 
-header #right {
+header #sixty {
     text-align: right;
     animation: 2s slideLeft;
+}
+
+.flexbox {
+    display: flex;
+}
+
+.half {
+    width: 50%;   
 }
 
 #herologo {
@@ -232,14 +246,15 @@ header #right {
 }
 
 #omoss {
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 125px;
+    padding-bottom: 100px;
 }
 
 #omossbild {
     background-color: gray;
+    margin-left: 5%;
     padding: 15px;
 }
 
@@ -249,7 +264,7 @@ header #right {
     height: 100%;
     margin-left: -10%;
     margin-top: 5%;
-    padding:10px;
+    padding:20px;
 }
 
 #agency {
@@ -304,42 +319,13 @@ header #right {
     
 }
 
-.flexbox {
-    display: flex;
-}
-
-.flex {
-    flex: 1;
-}
-
-.half {
-    width: 50%;
-    
-}
-
 #height100 {
     height: 100vh;
-}
-
-.third {
-    width: 33%;
-    padding: 15px;
-    margin: 15px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    text-align: center;
-}
-
-.third:hover {
-    transition-duration: 0.5s;
-    margin-top: -5px;
-    background-color: gray;
 }
 
 #clients {
     background-color: rgb(0, 0, 0);
     padding: 15px;
-    
 }
 
 #clientstext {
@@ -380,7 +366,6 @@ header #right {
     color: white;
     text-align: center;
     padding-top: -25px;
-    
 }
 
 .milestone {
@@ -389,7 +374,9 @@ header #right {
 }
 
 #gallery {
-    padding: 50px;
+    padding: 100px;
+    padding-top: 15px;
+    margin-top: 85px;
 }
 
 #gallerytext {
@@ -429,8 +416,9 @@ header #right {
 
 
 #contact {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 80px;
+    padding-top: 35px;
+    margin-bottom: 175px;
     padding-left:50px;
     padding-right: 50px;
 }
@@ -469,7 +457,6 @@ header #right {
 .button:hover {
     transition: 0.3s;
     background-color: #006da8;
-
 }
 
 #contacttext {
@@ -504,6 +491,7 @@ input:focus {
     background-color: rgb(192, 192, 192);
 }
 
+/*
 #annat {
     padding-left: 50px;
     padding-right: 50px;
@@ -525,6 +513,7 @@ input:focus {
     padding:10px;
     z-index: 9;
 }
+*/
 
 footer {
     background-color: black;

@@ -66,21 +66,33 @@ $(".omosslink").click(function() {
     }, 1500);
 });
 
-$(".serviceslink").click(function() {
+$(".agencylink").click(function() {
     $('html, body').animate({
-        scrollTop: $("#services").offset().top - 70
-    }, 1500);
-});
-
-$(".gallerylink").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#gallery").offset().top - 70
+        scrollTop: $("#agency").offset().top - 70
     }, 1500);
 });
 
 $(".clientslink").click(function() {
     $('html, body').animate({
         scrollTop: $("#clients").offset().top - 70
+    }, 1500);
+});
+
+$(".academylink").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#academy").offset().top - 70
+    }, 1500);
+});
+
+$(".timelinelink").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#timeline").offset().top - 70
+    }, 1500);
+});
+
+$(".gallerylink").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#gallery").offset().top - 70
     }, 1500);
 });
 
