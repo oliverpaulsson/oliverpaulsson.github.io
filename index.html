@@ -22,7 +22,7 @@
                     
                 </nav>
             </div>
-            <div id="sixty" class="flex">
+            <div id="sixty" class="nav flex">
                 <a class="omosslink" href="#omoss">About us</a>
                 <a class="agencylink" href="#agency">Agency</a>
                 <a class="clientslink" href="#clients">Clients</a>
@@ -50,7 +50,7 @@
             <img width="100%" src="./images/image.jpg">
         </div>
         <div id="omosstext" class="half hidden">
-            <h2>Ett företag som är coolt.</h2>
+            <h2 class="blue">Ett företag som är coolt.</h2>
             <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
         </div>
         
@@ -60,7 +60,14 @@
         <div id="agencyleft" class="height100 half">
             <img id="herologo" width="250px" src="./images/Small Blac Opal Logo-11.png">
             <h2>A dance company.</h2>
-            <p>Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum</p>
+            <p>Blac Opal Talent Agency is the part of the company that collaborates with event and commercial agencies
+                to provide dancers and choreographers for any and all occasions. With a small team of employees and a team of 
+                over 30 dancers and choreographers from south of Sweden, we have worked on 44 small and large scale projects for 
+                brands including IKEA, Porsche, SIME, and Casino Cosmopol. This part of the company has been put on hold for a 
+                few years now as our team has moved on to other projects, however our network of contacts still remain. Do you 
+                have an idea that you want to realize with the help of dance and choreography? Don't hesitate to get in touch!
+            </p>
+
         </div>
         <div id="agencybackground" class="height100 half">
             
@@ -136,8 +143,16 @@
 
         <div id="academyleft" class="height100 half">
             <img id="herologo" width="250px" src="./images/Small Blac Opal Logo-01.png">
-            <h2>A dance company.</h2>
-            <p>Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum Lorem ipsum lorem ipsum</p>
+            <h2>Community, community, community.</h2>
+            <p>The other part of our company, started in 2016 with Blac Opal Summer Camp, focuses on creating
+                a safe space for young dancers to sweat, develop, and share their love for dance. What started as 
+                a dance camp, organized during summers and winters, quickly turned into a full-fledged mentorship program,
+                where students got to practice all-year-round and receive constant feedback from their mentor, chosen from 
+                the pool of dancers working in our agency. This part of the company is still running, although the pandemic 
+                has forced us to take a break from it. Since our beginnings, we have organized several camps and workshops with 
+                over 4000 participants in total, as well as produced a full-length dance show in collaboration with some of 
+                Skånes biggest dance organizations.
+            </p>
         </div>
         
     </section>
@@ -218,24 +233,36 @@
     <section id="contact" class="flexbox hidden">
 
         <div id="contacttext" class="half padding">
-            <h2>Ett företag som är coolt.</h2>
-            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <h2>Get in touch.</h2>
+            <p>We are always down to have a chat, whether you are a person working for an event or commercial agency, a dancer who wants to collaborate, 
+                or just interested in what we do. Let's meet up and have a coffee or something!
+            </p>
         </div>
 
         <div id="contactbild" class="half padding">
-            <form>
-                <input id="name" class="input" placeholder="Name">
-                <input id="email" class="input" placeholder="Email">
-                <input id="message" class="input" placeholder="Message">
-                <button class="button">Skicka</button>
-            </form>
+            <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Your name">
+              
+                  <label for="email">Email</label>
+                  <input type="text" id="email" name="email" placeholder="Your email">
+              
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Write something..." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+            </div>
         </div>
     </section>
 
     <footer>
         <div id="center">
             <img id="footerlogo" width="200px" src="./images/logo.png">
-            <h2 id="footertext">A dance company.</h2>
+            
         </div>
         <div id="navflex" class="flexbox">
             <div class="flex">
@@ -248,13 +275,12 @@
             </div>
             <div id="middlefooter" class="flex">
                 <a class="omosslink" href="#omoss">About us</a>
-                <a class="serviceslink" href="#services">Services</a>
-                <a class="gallerylink" href="#gallery">Gallery</a>
+                <a class="agencylink" href="#agency">Agency</a>
                 <a class="clientslink" href="#clients">Clients</a>
-                <a class="contactlink" href="#contact">Contact</a>
-            </div>
-            <div id="copyright" class="flex">
-                <i class="inline far fa-copyright"></i><p class="inline">Copyright: Oliver Paulsson</p>
+                <a class="academylink" href="#academy">Academy</a>
+                <a class="timelinelink" href="#timeline">Timeline</a>
+                <a class="gallerylink" href="#gallery">Gallery</a>
+                <a class="contactlink extrabutton" href="#contact">Contact</a>
             </div>
         </div>
         <script src="./javascript/javascript.js"></script>
