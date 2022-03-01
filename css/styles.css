@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+  }
+
   @font-face {
     font-family: 'Avenir Pro';
     src: url('../fonts/AvenirNextLTPro-It.woff') format('woff'), 
@@ -231,6 +235,10 @@ header #sixty {
     margin-left: -2vw;
 }
 
+#herotext {
+    padding-right: 60%;
+}
+
 #hero {
     background-image: url("../images/hero-min.jpg");
     background-size: cover;
@@ -242,11 +250,7 @@ header #sixty {
 }
 
 #hero p {
-    padding-bottom: 25vh;
-}
-
-#hero p {
-    padding-bottom: 25vh;
+    padding-bottom: 20vh;
 }
 
 .arrowdiv {
@@ -269,7 +273,7 @@ header #sixty {
 #omoss {
     margin-left: 150px;
     margin-right: 150px;
-    padding-top: 125px;
+    padding-top: 100px;
     padding-bottom: 100px;
 }
 
@@ -280,7 +284,7 @@ header #sixty {
 }
 
 #omosstext {
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(230, 230, 230);
     color: rgb(0, 0, 0);
     height: 100%;
     margin-left: -10%;
@@ -311,7 +315,7 @@ header #sixty {
 }
 
 #agencybackground {
-    background-image: url(../images/hero-min.jpg);
+    background-image: url(../images/1\ \(2\).jpg);
     background-size: cover;
     background-position: right;
     overflow: none;
@@ -335,7 +339,7 @@ header #sixty {
 }
 
 #academybackground {
-    background-image: url(../images/hero-min.jpg);
+    background-image: url(../images/1\ \(3\).jpg);
     background-size: cover;
     background-position: right;
     overflow: none;
@@ -349,7 +353,7 @@ header #sixty {
 }
 
 #clients {
-    background-color: rgb(0, 0, 0);
+    background-color: #004067;
     padding: 15px;
 }
 
@@ -357,12 +361,13 @@ header #sixty {
     color: white;
     text-align: center;
     padding-top: -25px;
+    padding-bottom: 75px;
     
 }
 
 #scroller {
     margin-top: -10vh;
-    padding-bottom: 25px;
+    padding-bottom: 75px;
     width: 400vw;
     animation: 30s clientSlide;
     animation-timing-function: linear;
@@ -374,35 +379,170 @@ header #sixty {
 .clientlogo {
     display: inline-block;
     width: 20vw;
+    
 }
 
 .clientlogoreal {
-    width:150px;
+    max-height: 100px;
+    padding: 12px;
+    max-width: 200px;
 }
 
 #timeline {
-    background-color: rgb(201, 201, 201);
-    padding: 15px;
+    background-color: white;
     text-align: center;
     padding-bottom: 50px;
 }
 
 #timelinetext {
-    color: #0085cb;
+    color: black;
     text-align: center;
-    padding-top: -25px;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    margin: 0;
 }
 
-.milestone {
-    width: 14.2%;
-    color: rgb(0, 0, 0);
-}
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #0085cb;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the container to the left */
+  .left {
+    left: 0%;
+  }
+  
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+  
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #006398;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #006398;
+  }
+  
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #006398;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #006398 transparent transparent;
+  }
+  
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px 30px;
+    background-color: #006398;
+    color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  .content:hover {
+    background-color: black;
+    transition-duration: 1s;
+  }
+  .content:hover .parent {
+    background-color: black;
+    transition-duration: 1s;
+  }
+  
+  /* Media queries - Responsive timeline on screens less than 600px wide */
+  @media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+    .timeline::after {
+      left: 31px;
+    }
+  
+  /* Full-width containers */
+    .container {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+  
+  /* Make sure that all arrows are pointing leftwards */
+    .container::before {
+      left: 60px;
+      border: medium solid white;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent white transparent transparent;
+    }
+  
+  /* Make sure all circles are at the same spot */
+    .left::after, .right::after {
+      left: 15px;
+    }
+  
+  /* Make all right containers behave like the left ones */
+    .right {
+      left: 0%;
+    }
+  }
 
 #gallery {
+    background-color: rgb(230, 230, 230);
     padding-right: 150px;
     padding-left: 150px;
-    padding-top: 15px;
-    margin-top: 85px;
+    padding-top: 50px;
+    padding-bottom: 125px;
+    margin-top: 50px;
 }
 
 #gallerytext {
@@ -442,7 +582,7 @@ header #sixty {
 
 
 #contact {
-    margin-top: 100px;
+    margin-top: 75px;
     padding-top: 35px;
     margin-bottom: 175px;
     padding-left:150px;
@@ -505,32 +645,30 @@ label {
 
 input {
     margin-bottom: 15px;
-    font-family: "Avenir", serif;
-    vertical-align: top;
-    width: 95%;
-    padding: 2.5%;
-    transition: 0.3s;
-    background-color: white ;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-input:focus {
-    background-color: rgb(192, 192, 192);
-}
-
-textarea {
-    border: none;
-    box-sizing: border-box;
-    font-family: "Avenir", serif;
+    font-family: "Avenir Bold", serif;
     vertical-align: top;
     width: 100%;
     padding: 2.5%;
     transition: 0.3s;
     background-color: white ;
     text-transform: uppercase;
-    font-weight: bold;
+    font-size: 15px;
+}
+
+input:focus {
+    background-color: rgb(219, 218, 218);
+}
+
+textarea {
+    border: none;
+    box-sizing: border-box;
+    font-family: "Avenir Bold", serif;
+    vertical-align: top;
+    width: 100%;
+    padding: 2.5%;
+    transition: 0.3s;
+    background-color: white ;
+    text-transform: uppercase;
     font-size: 15px;
     outline: none;
 }
@@ -589,12 +727,12 @@ footer #middlefooter a:hover {
 
 #uparrow {
     transition-duration: 1s;
-    background-color: black;
+    background-color: #006398;
     color: white;
     border-radius: 100%;
     text-align: center;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     padding: 10px;
     opacity: 0; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -604,7 +742,7 @@ footer #middlefooter a:hover {
 }
 
 #uparrow:hover {
-    background-color: gray;
+    background-color: #004067;
     transition-duration: 0.3s;
 }
 
