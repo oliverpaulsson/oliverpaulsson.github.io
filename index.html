@@ -5,14 +5,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/8b3400ffd4.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/core.js?cache=12345"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
     
-    <header class="header">
+    <header id="header" class="header">
         <div id="navflex" class="flexbox">
             <div id="forty" class="flex">
                 <nav>
@@ -31,6 +33,24 @@
                 <a class="contactlink extrabutton" href="#contact">Contact</a>
             </div>
         </div>
+        <div class="topnav">
+            
+                <a class="social a" href="https://www.instagram.com/blacopaltalentcollective/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="social a" href="https://www.facebook.com/blacopaltalentcollective" target="_blank"><i class="fab fa-facebook"></i></a>
+            
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon a" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+
+        
     </header>
 
     <a id="uparrow" href="#hero"><i class="fas fa-chevron-up fa-3x"></i></a>
@@ -98,7 +118,8 @@
         
     </section>
 
-    <section id="clients">
+    <!--
+        <section id="clients">
             <h2 id="clientstext">Clients</h2>
         <div id="scroller">
             <div class="clientlogo">
@@ -155,6 +176,7 @@
         
         </div>
     </section>
+-->
 
     
 

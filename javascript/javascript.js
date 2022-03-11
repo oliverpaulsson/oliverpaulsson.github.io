@@ -30,13 +30,16 @@
 
 // HEADER AND TOP ARROW ON SCROLL
 
-jQuery(window).on('scroll', function() {
-    if(jQuery(window).scrollTop() > 50) {
-        jQuery('.header').css('background-color', '#000000');
-    } else {
-       jQuery('.header').css('background-color', 'transparent');
-    }
-});
+if ($(window).width() > 769) {
+    jQuery(window).on('scroll', function() {
+        if(jQuery(window).scrollTop() > 50) {
+            jQuery('.header').css('background-color', '#000000');
+        } else {
+           jQuery('.header').css('background-color', 'transparent');
+        }
+    });
+}
+
 
 jQuery(window).on('scroll', function() {
     if(jQuery(window).scrollTop() > 50) {
@@ -101,3 +104,15 @@ $(".contactlink").click(function() {
         scrollTop: $("#contact").offset().top - 70
     }, 1500);
 });
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    var y = document.getElementById("header");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+      y.style.backgroundColor = "black";
+    }
+  }

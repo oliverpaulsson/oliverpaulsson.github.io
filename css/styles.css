@@ -120,6 +120,43 @@ body {
     overflow-x: hidden;
 }
 
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    position: relative;
+    display: none;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    background-color: #333;
+  }
+  
+  /* Style navigation menu links */
+  .topnav .a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: inline-block;
+  }
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
 header {
     position: fixed;
     padding: 15px;
@@ -763,4 +800,43 @@ footer #middlefooter a:hover {
 .inline {
     display: inline;
     padding-right: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    p {
+        font-size: 15px;
+        line-height: 25px;
+    }  
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+
+    header {
+        width: 100vw;
+        background-color: black;
+    }
+    header #sixty a {
+        font-size: 15px;
+        margin-left: 25px;
+    }
+
+    .topnav {
+        display: block;
+    }
+    #navflex {
+        display: none;
+    }
 }
