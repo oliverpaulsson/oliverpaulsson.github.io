@@ -1,5 +1,10 @@
 * {
     box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  section {
+      max-width: 100vw;
   }
 
   @font-face {
@@ -111,6 +116,7 @@
   }
 
 body {
+    background-color: rgb(230, 230, 230);
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -545,7 +551,11 @@ header #sixty {
   /* Place the timelime to the left */
     .timeline::after {
       left: 31px;
+      top: 17px;
     }
+
+    
+    
   
   /* Full-width containers */
     .container {
@@ -557,10 +567,21 @@ header #sixty {
   /* Make sure that all arrows are pointing leftwards */
     .container::before {
       left: 60px;
-      border: medium solid white;
+      border: medium solid #006398;
       border-width: 10px 10px 10px 0;
-      border-color: transparent white transparent transparent;
+      border-color: transparent #006398 transparent transparent;
     }
+    .content h2 {
+        margin-top:0;
+        
+    }
+    .content {
+        padding: 30px 20px;
+        background-color: #006398;
+        color: white;
+        position: relative;
+        border-radius: 6px;
+      }
   
   /* Make sure all circles are at the same spot */
     .left::after, .right::after {
@@ -811,7 +832,7 @@ footer #middlefooter a:hover {
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
 
     p {
         font-size: 15px;
@@ -822,6 +843,23 @@ footer #middlefooter a:hover {
     }
     h2 {
         font-size: 35px;
+    }
+
+    #uparrow {
+        
+        bottom: 20px; /* Place the button at the bottom of the page */
+        left: 75vw; /* Place the button 30px from the right */
+            width: 70px;
+            height: 70px;
+            padding: 10px;
+    }
+
+    .flexbox {
+        display: block;
+    }
+    
+    .half {
+        width: 100vw;   
     }
 
     header {
@@ -838,5 +876,130 @@ footer #middlefooter a:hover {
     }
     #navflex {
         display: none;
+    }
+
+    #hero {
+        padding-right: 30px;
+        padding-left: 30px;
+        margin: 0;
+    }
+
+    #herologo {
+        margin-left: -15px;
+        width: 200px;
+    }
+    
+    #herotext {
+        padding-right: 15vw;
+    }
+    
+    #hero {
+        overflow: hidden;
+        padding-top: 20vh;
+        background-position: center;
+    }
+    
+    #hero p {
+        padding-bottom: 15vh;
+    }
+
+    #omoss {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+    #omossbild {
+        display: none;
+    }
+    
+    #omosstext {
+        margin-left: 0;
+        margin-top: 0;
+        padding:0;
+    }
+
+    #agency {
+        padding:0;
+        margin: 0;
+            display: flex;
+            flex-direction: column-reverse;
+    }
+
+    #agencyleft {
+        text-align: left;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    #agencybackground {
+        background-position: center;  
+        height: 250px;   
+    }
+
+    #academy {
+        padding: 0;
+        margin: 0;
+    }
+
+    #academyleft {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    #academybackground {
+        background-position: center;
+        height: 250px;    
+    }
+
+    #clients {
+        padding: 0;
+        margin: 0;
+    }
+
+    #gallery {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+    }
+
+    #contact {
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0;
+        background-color: white;
+    }
+
+    .padding {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #contacttext {
+        padding: 0;
+        text-align: center;
+        padding-bottom: 60px;
+    }
+    
+    #contactbild {
+        background-color: rgb(0, 0, 0);
+        height: 100%;
+        padding: 25px;
+        border-radius: 10px;
+    }
+
+    #message {
+        height: 100px;
+        margin-bottom: 10px;
     }
 }
