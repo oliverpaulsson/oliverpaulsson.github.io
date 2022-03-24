@@ -116,7 +116,7 @@
   }
 
 body {
-    background-color: rgb(230, 230, 230);
+    
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -195,10 +195,10 @@ header nav {
 header #sixty a {
     text-decoration: none;
     font-family: "Avenir", serif;
-    font-size: 15px;
+    font-size: 12px;
     color: #ffffff;
     font-size: 20px;
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 header #sixty a:hover {
@@ -210,11 +210,11 @@ nav {
 }
 
 #forty {
-    flex: 3;
+    flex: 1;
 }
 
 #sixty {
-    flex: 7;
+    flex: 9;
 }
 
 .social {
@@ -823,6 +823,37 @@ footer #middlefooter a:hover {
     padding-right: 4px;
 }
 
+#footermobile {
+    display: none;
+    background-color: black;
+    text-align: center;
+    margin:0;
+    padding: 20px 25px;
+}
+
+#footermobile a {
+    text-decoration: none;
+    display: block;
+    font-family: "Avenir", serif;
+    color: white;
+    font-size: 12px;
+}
+
+#footermobile a:hover {
+    color: #0085cb;
+    transition: 0.3s;
+}
+
+#footermobile .social {
+    display: inline;
+    padding:0;
+    margin:0;
+}
+
+#middlefootermobile {
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
 
 
 
@@ -830,9 +861,11 @@ footer #middlefooter a:hover {
 
 
 
+@media screen and (max-width: 1000px) {
 
-
-@media screen and (max-width: 700px) {
+    header #sixty a {
+        font-size: 15px;
+    }
 
     p {
         font-size: 15px;
@@ -867,8 +900,7 @@ footer #middlefooter a:hover {
         background-color: black;
     }
     header #sixty a {
-        font-size: 15px;
-        margin-left: 25px;
+        font-size: 12px;
     }
 
     .topnav {
@@ -909,6 +941,7 @@ footer #middlefooter a:hover {
         padding-top: 50px;
         padding-bottom: 50px;
         margin: 0;
+        background-color: rgb(230, 230, 230);
     }
 
     #omossbild {
@@ -1002,4 +1035,34 @@ footer #middlefooter a:hover {
         height: 100px;
         margin-bottom: 10px;
     }
+
+    footer {
+        display: none;
+    }
+
+    #footermobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+        /* Main CSS */
+.grid-wrapper > div {
+	display: block;
+}
+.grid-wrapper > div > img {
+	margin-bottom: 10px;
+}
+
+.grid-wrapper {
+	display: block;
+}
+
+#footermobile a {
+    text-decoration: none;
+    display: block;
+    font-family: "Avenir", serif;
+    color: white;
+    font-size: 12px;
+}
 }
