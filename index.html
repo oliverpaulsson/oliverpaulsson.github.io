@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <head>
     <title>Blac Opal</title>
+    <link rel="stylesheet" href="./css/glightbox.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <script src="https://kit.fontawesome.com/8b3400ffd4.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="/js/core.js?cache=12345"></script>
@@ -40,9 +42,13 @@
             
             <!-- Navigation links (hidden by default) -->
             <div id="myLinks">
-              <a href="#news">News</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
+                <a class="omosslink" href="#omoss">About us</a>
+                <a class="agencylink" href="#agency">Agency</a>
+                <a class="clientslink" href="#clients">Clients</a>
+                <a class="academylink" href="#academy">Academy</a>
+                <a class="timelinelink" href="#timeline">Timeline</a>
+                <a class="gallerylink" href="#gallery">Gallery</a>
+                <a class="contactlink extrabutton" href="#contact">Contact</a>
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <a href="javascript:void(0);" class="icon a" onclick="myFunction()">
@@ -223,36 +229,60 @@
 
     <section id="gallery" class="hidden">
         <h2 id="gallerytext">Gallery</h2>
+
         <div class="grid-wrapper">
             <div>
-                <img src="./images/Gallery/SQUARE (1).jpg" alt="" />    
+                <a href="./images/Gallery/SQUARE (1).jpg" class="glightbox">
+                    <img class="img" src="./images/Gallery/SQUARE (1).jpg" alt="" />
+                </a>    
             </div>
             <div>
-                <img src="./images/Gallery/SQUARE (2).jpg" alt="" />
+                <div>
+                    <a href="./images/Gallery/SQUARE (2).jpg" class="glightbox">
+                        <img class="img" src="./images/Gallery/SQUARE (2).jpg" alt="" />
+                    </a>
+                </div>
+                
             </div>
             <div class="tall">
-                <img src="./images/Gallery/Tall (5).jpg" alt="" />
+                <a href="./images/Gallery/Tall (5).jpg" class="glightbox">
+                    <img class="img" src="./images/Gallery/Tall (5).jpg" alt="" />
+                </a>
             </div>
             <div class="wide">
-                <img src="./images/Gallery/Wide (6).jpg" alt="" />
+                <a href="./images/Gallery/Wide (6).jpg" class="glightbox">
+                <img class="img" src="./images/Gallery/Wide (6).jpg" alt="" />
+                </a>
             </div>
             <div>
-                <img src="./images/Gallery/SQUARE (3).jpg" alt="" />
+                <a href="./images/Gallery/SQUARE (3).jpg" class="glightbox">
+                <img class="img" src="./images/Gallery/SQUARE (3).jpg" alt="" />
+                </a>
             </div>
             <div class="tall">
-                <img src="./images/Gallery/Tall (4).jpg" alt="" />
+                <a href="./images/Gallery/Tall (4).jpg" class="glightbox">
+                <img class="img" src="./images/Gallery/Tall (4).jpg" alt="" />
+                </a>
             </div>
             <div class="big">
-                <img src="./images/Gallery/Wide (3).jpg" alt="" />
+                <a href="./images/Gallery/Wide (3).jpg" class="glightbox">
+                <img class="img" src="./images/Gallery/Wide (3).jpg" alt="" />
+                </a>
             </div>
             <div>
-                <img src="./images/Gallery/SQUARE (4).jpg" alt="" />
+                <a href="./images/Gallery/SQUARE (4).jpg" class="glightbox">
+                <img class="img" src="./images/Gallery/SQUARE (4).jpg" alt="" />
+                </a>
             </div>
             <div>
-                <img src="./images/Gallery/SQUARE (5).jpg" alt="" />
+                <a href="./images/Gallery/SQUARE (5).jpg" class="glightbox">
+                <img class="img" src="./images/Gallery/SQUARE (5).jpg" alt="" />
+                </a>
             </div>
             <div>
-                <img src="./images/Gallery/Wide (2).jpg" alt="" />
+                <a href="./images/Gallery/Wide (2).jpg" class="glightbox">
+                <img class="img" src="./images/Gallery/Wide (2).jpg" alt="" />
+                </a>
             </div>
         </div>
     </section>
@@ -293,12 +323,7 @@
         </div>
         <div id="navflex" class="flexbox">
             <div class="flex">
-                <nav>
-                    <a class="social" href="https://www.instagram.com/blacopaltalentcollective/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a class="social" href="https://www.facebook.com/blacopaltalentcollective" target="_blank"><i class="fab fa-facebook"></i></a>
-                    
-                    
-                </nav>
+            
             </div>
             <div id="middlefooter" class="flex">
                 <a class="omosslink" href="#omoss">About us</a>
@@ -322,10 +347,11 @@
             <a class="timelinelink" href="#timeline">Timeline</a>
             <a class="gallerylink" href="#gallery">Gallery</a>
             <a class="contactlink" href="#contact">Contact</a>
-        </div>
-
-        <a class="social" href="https://www.instagram.com/blacopaltalentcollective/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a class="social" href="https://www.facebook.com/blacopaltalentcollective" target="_blank"><i class="fab fa-facebook"></i></a>
-                    
+        </div>      
     </div>
+
+    <script src="./javascript/glightbox.min.js"></script>
+    <script type="module">
+        const lightbox = GLightbox({ loop: true });
+      </script>
 </body>

@@ -137,6 +137,7 @@ body {
   .topnav #myLinks {
     display: none;
     background-color: #333;
+    font-family: Avenir;
   }
   
   /* Style navigation menu links */
@@ -220,6 +221,7 @@ nav {
 .social {
     color: white;
     padding-right: 15px;
+    
 }
 
 p {
@@ -612,12 +614,33 @@ header #sixty {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    overflow: hidden;
+    height: 100%;
+    
 }
-.grid-wrapper > div > img {
-	width: 100%;
+
+
+.glightbox {
+    display: block;
+}
+
+.grid-wrapper > div > a {
+    width: 100%;
 	height: 100%;
 	object-fit: cover;
-	border-radius: 5px;
+    display: block;
+}
+
+.grid-wrapper > div > a > img {
+    width: 100%;
+	height: 100%;
+	object-fit: cover;
+    display: block;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
 }
 
 .grid-wrapper {
@@ -626,16 +649,20 @@ header #sixty {
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	grid-auto-rows: 200px;
 	grid-auto-flow: dense;
+    object-fit: cover;
 }
 .grid-wrapper .wide {
 	grid-column: span 2;
+    
 }
 .grid-wrapper .tall {
 	grid-row: span 2;
+    
 }
 .grid-wrapper .big {
 	grid-column: span 2;
 	grid-row: span 2;
+    
 }
 
 
@@ -844,12 +871,6 @@ footer #middlefooter a:hover {
     transition: 0.3s;
 }
 
-#footermobile .social {
-    display: inline;
-    padding:0;
-    margin:0;
-}
-
 #middlefootermobile {
     padding-bottom: 15px;
     padding-top: 5px;
@@ -1050,7 +1071,7 @@ footer #middlefooter a:hover {
 .grid-wrapper > div {
 	display: block;
 }
-.grid-wrapper > div > img {
+.grid-wrapper > div {
 	margin-bottom: 10px;
 }
 
