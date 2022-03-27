@@ -46,28 +46,6 @@
     opacity: 0;
   }
 
-@keyframes slideRight {
-    0% {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideLeft {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 @keyframes slideInFromLeft {
     0% {
         transform: translateY(-8%);
@@ -77,14 +55,6 @@
     }
 }
 
-@keyframes clientSlide {
-    0% {
-        transform: translateX(-163vw);
-    }
-    100% {
-        transform: translateX(0vw);
-    }
-}
 
 ::selection {
     background: #0085cb; /* WebKit/Blink Browsers */
@@ -405,32 +375,32 @@ header #sixty {
 #clientstext {
     color: white;
     text-align: center;
-    padding-top: -25px;
+    padding-top: -2vh;
     padding-bottom: 75px;
     
 }
 
 #scroller {
-    margin-top: -10vh;
-    padding-bottom: 75px;
-    width: 400vw;
-    animation: 30s clientSlide;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    overflow: hidden;
+    margin-top: -7vh;
+    padding-bottom: 35px;
+    text-align: center;
+
+    
 }
 
 .clientlogo {
     display: inline-block;
-    width: 20vw;
+    width: 10%;
+    vertical-align: middle
     
 }
 
 .clientlogoreal {
-    max-height: 100px;
+    max-height: 12vh;
     padding: 12px;
-    max-width: 200px;
+    max-width: 8vw;
+    vertical-align: middle
+
 }
 
 #timeline {
@@ -701,7 +671,7 @@ header #sixty {
     text-transform: uppercase;
     box-shadow: none;
     text-shadow: none;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -736,7 +706,7 @@ input {
     padding: 2.5%;
     transition: 0.3s;
     background-color: white ;
-    text-transform: uppercase;
+    
     font-size: 15px;
 }
 
@@ -753,7 +723,7 @@ textarea {
     padding: 2.5%;
     transition: 0.3s;
     background-color: white ;
-    text-transform: uppercase;
+    
     font-size: 15px;
     outline: none;
 }
@@ -766,6 +736,7 @@ input[type=submit] {
     margin-top: 2.5%;
     margin-bottom: 0;
     font-family: "Avenir Bold", serif;
+    text-transform: uppercase;
     height: 50px;
     background-color: #0085cb;
     color: white;
@@ -879,8 +850,18 @@ footer #middlefooter a:hover {
 
 
 
+@media screen and (max-width: 500px) {
+    .clientlogo {
+        width: 100%;
+    }
 
-
+    .clientlogoreal {
+        padding: 12px;
+        max-width: 50vw;
+        padding-bottom: 25px
+    
+    }
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -1014,6 +995,7 @@ footer #middlefooter a:hover {
 
     #clients {
         padding: 0;
+        padding-top: 25px;
         margin: 0;
     }
 
@@ -1061,6 +1043,10 @@ footer #middlefooter a:hover {
         display: none;
     }
 
+    #footermobile a {
+        padding-bottom: 5px;
+    }
+
     #footermobile {
         display: block;
     }
@@ -1085,5 +1071,6 @@ footer #middlefooter a:hover {
     font-family: "Avenir", serif;
     color: white;
     font-size: 12px;
+    padding-bottom: 5px;
 }
 }
