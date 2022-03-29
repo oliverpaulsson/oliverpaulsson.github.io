@@ -255,7 +255,10 @@ header #sixty {
 }
 
 #hero {
-    background-color: #006398;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
     background-image: url("../images/hero-min\ \(2\).jpg");
     background-size: cover;
     overflow: hidden;
