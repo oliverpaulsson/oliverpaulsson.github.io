@@ -255,6 +255,7 @@ header #sixty {
 }
 
 #hero {
+    background-color: #006398;
     background-image: url("../images/hero-min\ \(2\).jpg");
     background-size: cover;
     overflow: hidden;
